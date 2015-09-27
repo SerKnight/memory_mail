@@ -1,0 +1,44 @@
+.homepage-container
+  .row
+    .col.col-md-8.col-md-offset-2.text-center
+      %h1 Memory Mailer
+    .col.col-md-4.text-center.about-blurb
+      .homepage-icon-big.fa.fa-birthday-cake
+      %br
+        1) This is what we do
+    .col.col-md-4.text-center.about-blurb
+      .homepage-icon-big.fa.fa-map-signs
+      %br
+        2) This is how we do it
+    .col.col-md-4.text-center.about-blurb
+      .homepage-icon-big.fa.fa-calendar-o
+      %br
+        3) This is why you should care
+
+
+  .row.mail-bg.pic-1
+    .youtube-vid-container
+      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/GuQyfZNiSCY", :width => "560"}
+
+  .row
+    .col.col-md-4.text-center.about-blurb
+      .homepage-icon-big.fa.fa-birthday-cake
+      %br
+        Send Cards
+    .col.col-md-4.text-center.about-blurb
+      .homepage-icon-big.fa.fa-map-signs
+      %br
+        Customize gifts with Artists
+    .col.col-md-4.text-center.about-blurb
+      .homepage-icon-big.fa.fa-calendar-o
+      %br
+        Show your loved ones you care
+
+
+  .row.mail-bg.pic-2
+    .facebook-login
+      - if user_signed_in?
+        .fa.fa-facebook{style: 'color:#fff;'}
+        = link_to 'Explore Mailers', root_url
+      - else
+        = link_to 'Connect Using Facebook', signin_path

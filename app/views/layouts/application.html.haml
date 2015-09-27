@@ -9,9 +9,6 @@
     = csrf_meta_tags
   %body
     %header
-      = render 'layouts/navigation'
-    %main{:role => "main"}
-      = render 'layouts/messages'
-      = yield
+    = render 'layouts/messages'
+    = yield
 
-      .fb-like{"data-share" => "true", "data-show-faces" => "true", "data-width" => "450"}

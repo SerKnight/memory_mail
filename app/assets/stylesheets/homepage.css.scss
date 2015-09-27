@@ -1,0 +1,78 @@
+
+.homepage-icon-big {
+	margin: 30px;
+	font-size: 60px !important;
+}
+
+.mail-bg {
+	width: 100%;
+	position: relative;
+	float: left;
+  opacity: 0.8;
+}
+
+.pic-1 {
+	background: asset-url("mail.jpeg") no-repeat center center;;
+	background-size: 100%;
+	height: 600px;
+}
+.pic-2 {
+	background: asset-url("memory-2.jpeg") no-repeat top center;;
+	background-size: 100%;
+	height: 400px;
+}
+
+.about-blurb {
+	margin-bottom: 80px;
+	margin-top: 50px;
+}
+
+
+.facebook-login {
+	margin: 0 auto;
+	position: relative;
+	width: 250px;
+	text-align: center;
+	height: 56px;
+	cursor: pointer;
+	background-color: #3b5998;
+	border: 2px solid #0e1f5b;
+	padding-top: 13px;
+	font-size: 15px;
+	font-family: arial;
+	letter-spacing: 1px;
+  margin-top: 150px;
+	opacity: 0.9;
+	
+	a {
+		color: #fff;
+
+		&:hover {
+			text-decoration: none;
+		}
+		&:active {
+			text-decoration: none;
+		}
+	}
+
+	&:hover {
+		border: 3px solid #0e1f5b;
+		opacity: 1.0;
+	}
+}
+.youtube-vid-container {
+	margin-top: 100px;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 771px){
+	.pic-2 {
+		height: 400px;
+		background-size: 200%;
+	}
+		
+	.facebook-login {
+		margin-top: 40%;
+	}
+}
